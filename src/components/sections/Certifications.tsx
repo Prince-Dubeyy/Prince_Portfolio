@@ -23,14 +23,16 @@ export function Certifications() {
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 w-full">
         {certifications.map((cert, idx) => (
-          <Card key={idx} gradientHover className="p-6 text-center group cursor-pointer" onClick={() => window.open(cert.url, '_blank')}>
-            <Award className="w-10 h-10 mx-auto text-blue-400 mb-4 group-hover:scale-110 transition-transform duration-300" />
-            <h3 className="text-lg font-bold text-white mb-2">{cert.name}</h3>
-            <p className="text-sm text-gray-400 mb-4">{cert.issuer}</p>
-            <div className="flex items-center justify-center gap-2 text-xs font-medium text-green-400 bg-green-500/10 py-1.5 px-3 rounded-full border border-green-500/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-              <CheckCircle className="w-3 h-3" /> Verified
-            </div>
-          </Card>
+          <a key={idx} href={cert.url} target="_blank" rel="noopener noreferrer" className="block h-full">
+            <Card gradientHover className="p-6 text-center group cursor-pointer h-full">
+              <Award className="w-10 h-10 mx-auto text-blue-400 mb-4 group-hover:scale-110 transition-transform duration-300" />
+              <h3 className="text-lg font-bold text-white mb-2">{cert.name}</h3>
+              <p className="text-sm text-gray-400 mb-4">{cert.issuer}</p>
+              <div className="flex items-center justify-center gap-2 text-xs font-medium text-green-400 bg-green-500/10 py-1.5 px-3 rounded-full border border-green-500/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                <CheckCircle className="w-3 h-3" /> Verified
+              </div>
+            </Card>
+          </a>
         ))}
       </div>
     </Section>
