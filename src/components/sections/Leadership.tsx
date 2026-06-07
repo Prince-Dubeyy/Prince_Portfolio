@@ -47,7 +47,7 @@ export function Leadership() {
               </div>
 
               <p className="text-gray-400 leading-relaxed mb-8">
-                Co-founded VisionX Nexus, a technology-focused initiative dedicated to transforming ideas into impactful digital solutions. Contributed to strategic planning, project execution, community growth, and technology-driven innovation while collaborating on real-world development and problem-solving initiatives.
+                Co-founded VisionX Nexus, a technology-focused initiative dedicated to transforming ideas into impactful digital solutions. Contributed to strategic planning, project execution, technology innovation, and collaborative problem-solving.
               </p>
 
               <div className="mb-8">
