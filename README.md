@@ -123,8 +123,6 @@ A modern portfolio showcasing my projects, technical skills, achievements, certi
 ## 🌐 Connect With Me
 
 - Portfolio: https://prince-portfolio-lime-mu.vercel.app/
-- GitHub: https://github.com/YOUR_USERNAME
-- LinkedIn: YOUR_LINKEDIN_URL
 - Email: princeekjmar@gmail.com
 
 ---
