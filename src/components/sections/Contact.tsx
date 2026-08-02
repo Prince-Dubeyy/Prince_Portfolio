@@ -2,7 +2,7 @@
 
 import { Section } from "@/components/ui/Section";
 import { Card } from "@/components/ui/Card";
-import { Button } from "@/components/ui/Button";
+
 import { Mail, Phone } from "lucide-react";
 
 const GithubIcon = ({ size = 24, className = "" }: { size?: number; className?: string }) => (
@@ -28,63 +28,41 @@ export function Contact() {
         </p>
       </div>
 
-      <div className="grid grid-cols-1 lg:grid-cols-5 gap-12 w-full max-w-5xl mx-auto">
-        <div className="lg:col-span-2 flex flex-col gap-6">
-          <Card className="p-6 flex items-center gap-4">
+      <div className="flex flex-col items-center gap-8 w-full max-w-3xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 w-full">
+          <Card className="p-6 flex flex-col items-center text-center gap-4">
             <div className="w-12 h-12 rounded-full bg-blue-500/10 flex items-center justify-center text-blue-400">
               <Mail size={24} />
             </div>
             <div>
-              <p className="text-sm text-gray-500 uppercase tracking-wider">Email</p>
-              <a href="mailto:princeekjmar@gmail.com" className="text-white hover:text-blue-400 font-medium transition-colors">
+              <p className="text-sm text-gray-500 uppercase tracking-wider mb-1">Email</p>
+              <a href="mailto:princeekjmar@gmail.com" className="text-white hover:text-blue-400 font-medium transition-colors text-lg">
                 princeekjmar@gmail.com
               </a>
             </div>
           </Card>
 
-          <Card className="p-6 flex items-center gap-4">
+          <Card className="p-6 flex flex-col items-center text-center gap-4">
             <div className="w-12 h-12 rounded-full bg-purple-500/10 flex items-center justify-center text-purple-400">
               <Phone size={24} />
             </div>
             <div>
-              <p className="text-sm text-gray-500 uppercase tracking-wider">Location</p>
-              <p className="text-white font-medium">Bengaluru, Karnataka</p>
+              <p className="text-sm text-gray-500 uppercase tracking-wider mb-1">Location</p>
+              <p className="text-white font-medium text-lg">Bengaluru, Karnataka</p>
             </div>
           </Card>
-
-          <div className="flex flex-wrap gap-4 mt-4">
-            <a href="https://www.linkedin.com/in/prince-dubey-365056323/" target="_blank" rel="noopener noreferrer" className="w-12 h-12 rounded-full glass flex items-center justify-center text-gray-400 hover:text-blue-500 hover:border-blue-500/50 transition-all duration-300" aria-label="LinkedIn profile">
-              <LinkedinIcon size={20} />
-            </a>
-            <a href="https://github.com/Prince-Dubeyy" target="_blank" rel="noopener noreferrer" className="w-12 h-12 rounded-full glass flex items-center justify-center text-gray-400 hover:text-white hover:border-white/50 transition-all duration-300" aria-label="GitHub profile">
-              <GithubIcon size={20} />
-            </a>
-            <a href="https://www.hackerrank.com/profile/princeekjmar" target="_blank" rel="noopener noreferrer" className="w-12 h-12 rounded-full glass flex items-center justify-center text-gray-400 hover:text-green-500 hover:border-green-500/50 transition-all duration-300 font-bold font-mono text-xl" aria-label="HackerRank profile">
-              H
-            </a>
-          </div>
         </div>
 
-        <div className="lg:col-span-3">
-          <Card className="p-8">
-            <form className="space-y-6" onSubmit={(e) => e.preventDefault()}>
-              <div className="space-y-2">
-                <label htmlFor="name" className="text-sm font-medium text-gray-300">Name</label>
-                <input type="text" id="name" className="w-full bg-surface/50 border border-white/10 rounded-lg px-4 py-3 text-white focus:outline-none focus:ring-2 focus:ring-blue-500/50 transition-all" placeholder="Your name" />
-              </div>
-              <div className="space-y-2">
-                <label htmlFor="email" className="text-sm font-medium text-gray-300">Email</label>
-                <input type="email" id="email" className="w-full bg-surface/50 border border-white/10 rounded-lg px-4 py-3 text-white focus:outline-none focus:ring-2 focus:ring-blue-500/50 transition-all" placeholder="you@example.com" />
-              </div>
-              <div className="space-y-2">
-                <label htmlFor="message" className="text-sm font-medium text-gray-300">Message</label>
-                <textarea id="message" rows={4} className="w-full bg-surface/50 border border-white/10 rounded-lg px-4 py-3 text-white focus:outline-none focus:ring-2 focus:ring-blue-500/50 transition-all resize-none" placeholder="Tell me about your project or idea..."></textarea>
-              </div>
-              <Button type="submit" className="w-full">
-                Send Message
-              </Button>
-            </form>
-          </Card>
+        <div className="flex flex-wrap justify-center gap-6 mt-4">
+          <a href="https://www.linkedin.com/in/prince-dubey-365056323/" target="_blank" rel="noopener noreferrer" className="w-16 h-16 rounded-full glass flex items-center justify-center text-gray-400 hover:text-blue-500 hover:border-blue-500/50 transition-all duration-300 shadow-lg hover:shadow-blue-500/20" aria-label="LinkedIn profile">
+            <LinkedinIcon size={24} />
+          </a>
+          <a href="https://github.com/Prince-Dubeyy" target="_blank" rel="noopener noreferrer" className="w-16 h-16 rounded-full glass flex items-center justify-center text-gray-400 hover:text-white hover:border-white/50 transition-all duration-300 shadow-lg hover:shadow-white/20" aria-label="GitHub profile">
+            <GithubIcon size={24} />
+          </a>
+          <a href="https://www.hackerrank.com/profile/princeekjmar" target="_blank" rel="noopener noreferrer" className="w-16 h-16 rounded-full glass flex items-center justify-center text-gray-400 hover:text-green-500 hover:border-green-500/50 transition-all duration-300 font-bold font-mono text-2xl shadow-lg hover:shadow-green-500/20" aria-label="HackerRank profile">
+            H
+          </a>
         </div>
       </div>
     </Section>

@@ -46,7 +46,7 @@ export function Hero() {
             <Button variant="primary" href="#projects" className="flex items-center gap-2">
               View Projects <ArrowRight size={18} />
             </Button>
-            <Button variant="outline" href="https://drive.google.com/file/d/1b6O0WPJorAPQo5NhaZQX_UbU2DfDdlMD/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
+            <Button variant="outline" href="https://drive.google.com/file/d/1KzcUPv2HiGqvL9HDL5DRTUmUCdbAeDwa/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
               <Download size={18} /> Download Resume
             </Button>
             <Button variant="ghost" href="#contact" className="flex items-center gap-2 text-gray-300 hover:text-white">

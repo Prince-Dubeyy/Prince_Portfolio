@@ -8,7 +8,7 @@ const education = [
   {
     institution: "Garden City University",
     degree: "B.Sc. Data Science & Cybersecurity",
-    score: "CGPA: 8.54",
+    score: "CGPA: 8.96",
     year: "Expected Graduation: 2027",
   },
   {
