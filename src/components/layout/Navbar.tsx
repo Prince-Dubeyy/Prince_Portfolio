@@ -32,10 +32,7 @@ export function Navbar() {
 
   return (
     <motion.header
-      variants={{
-        visible: { y: 0 },
-        hidden: { y: "-100%" },
-      }}
+      variants={{ visible: { y: 0 }, hidden: { y: "-100%" } }}
       animate={hidden ? "hidden" : "visible"}
       transition={{ duration: 0.35, ease: "easeInOut" }}
       className={cn(
@@ -50,28 +47,17 @@ export function Navbar() {
 
         <nav className="hidden md:flex items-center gap-8">
           {NAV_LINKS.map((link) => (
-            <a
-              key={link.name}
-              href={link.href}
-              className="text-sm font-medium text-gray-300 hover:text-white transition-colors"
-            >
+            <a key={link.name} href={link.href} className="text-sm font-medium text-gray-300 hover:text-white transition-colors">
               {link.name}
             </a>
           ))}
-          <a
-            href="#contact"
-            className="px-4 py-2 text-sm font-medium text-white bg-blue-600/20 border border-blue-500/50 rounded-full hover:bg-blue-600/40 transition-colors"
-          >
+          <a href="#contact" className="px-4 py-2 text-sm font-medium text-white bg-blue-600/20 border border-blue-500/50 rounded-full hover:bg-blue-600/40 transition-colors">
             Hire Me
           </a>
         </nav>
 
-        {/* Mobile menu could be added here, keeping it minimal for now */}
         <div className="md:hidden">
-          <a
-            href="#contact"
-            className="px-4 py-2 text-sm font-medium text-white bg-blue-600/20 border border-blue-500/50 rounded-full hover:bg-blue-600/40 transition-colors"
-          >
+          <a href="#contact" className="px-4 py-2 text-sm font-medium text-white bg-blue-600/20 border border-blue-500/50 rounded-full hover:bg-blue-600/40 transition-colors">
             Contact
           </a>
         </div>

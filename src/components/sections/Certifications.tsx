@@ -5,10 +5,10 @@ import { Card } from "@/components/ui/Card";
 import { Award, CheckCircle } from "lucide-react";
 
 const certifications = [
-  { name: "Power BI", issuer: "Coursera", url: "https://www.coursera.org/account/accomplishments/verify/6T5EFL6TD6D9" },
-  { name: "SQL", issuer: "Coursera", url: "https://www.coursera.org/account/accomplishments/verify/J9NGKP1CTP12" },
-  { name: "Excel", issuer: "Coursera", url: "https://www.coursera.org/account/accomplishments/verify/QGTGDANGS7M5" },
-  { name: "Python for Data Science", issuer: "IIT Kanpur", url: "https://verify.eicta.digitalcredentials.in/262257fa-8a4d-4bc2-a70b-d01197d80a79" },
+  { name: "Data Science with Python", issuer: "FutureSkills Prime", url: "https://futureskillsprime.in/" },
+  { name: "Python for Data Science", issuer: "IIT Kanpur", url: "https://www.iitk.ac.in/" },
+  { name: "Microsoft Power BI", issuer: "Coursera", url: "https://www.coursera.org/" },
+  { name: "SQL", issuer: "Coursera", url: "https://www.coursera.org/" },
 ];
 
 export function Certifications() {
@@ -17,7 +17,7 @@ export function Certifications() {
       <div className="text-center mb-16">
         <h2 className="text-3xl md:text-5xl font-bold mb-4">Certifications</h2>
         <p className="text-gray-400 text-lg max-w-2xl mx-auto">
-          Continuous learning and verified expertise in the modern data stack.
+          Verified learning in Python, analytics, business intelligence, and data-driven development.
         </p>
       </div>
 

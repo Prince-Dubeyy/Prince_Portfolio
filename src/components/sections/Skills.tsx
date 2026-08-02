@@ -2,49 +2,27 @@
 
 import { Section } from "@/components/ui/Section";
 import { Card } from "@/components/ui/Card";
-import { motion } from "framer-motion";
 
 const skillsData = [
   {
-    category: "Programming",
-    skills: [
-      { name: "Python", proficiency: 90 },
-      { name: "SQL", proficiency: 85 },
-    ],
+    category: "Core Skills",
+    skills: ["Python", "SQL", "Machine Learning", "NLP"],
   },
   {
-    category: "Machine Learning",
-    skills: [
-      { name: "Scikit-learn", proficiency: 80 },
-      { name: "Predictive Modeling", proficiency: 85 },
-      { name: "Regression", proficiency: 85 },
-      { name: "Classification", proficiency: 80 },
-    ],
+    category: "Analytics & BI",
+    skills: ["Predictive Analytics", "Recommendation Systems", "Power BI", "Excel"],
   },
   {
-    category: "Data Analysis",
-    skills: [
-      { name: "Pandas", proficiency: 95 },
-      { name: "NumPy", proficiency: 90 },
-      { name: "EDA", proficiency: 90 },
-      { name: "Trend Analysis", proficiency: 85 },
-    ],
+    category: "Data Science Stack",
+    skills: ["Pandas", "NumPy", "Scikit-learn", "Matplotlib"],
   },
   {
-    category: "Visualization",
-    skills: [
-      { name: "Power BI", proficiency: 90 },
-      { name: "Excel", proficiency: 85 },
-      { name: "Dashboard Development", proficiency: 85 },
-    ],
+    category: "Generative AI",
+    skills: ["Generative AI", "LLMs", "Prompt Engineering", "RAG"],
   },
   {
-    category: "Tools",
-    skills: [
-      { name: "Git & GitHub", proficiency: 80 },
-      { name: "VS Code", proficiency: 95 },
-      { name: "Jupyter Notebook", proficiency: 95 },
-    ],
+    category: "Development Tools",
+    skills: ["Git", "GitHub", "VS Code", "FastAPI"],
   },
 ];
 
@@ -54,7 +32,7 @@ export function Skills() {
       <div className="text-center mb-16">
         <h2 className="text-3xl md:text-5xl font-bold mb-4">Technical Arsenal</h2>
         <p className="text-gray-400 text-lg max-w-2xl mx-auto">
-          A comprehensive toolkit tailored for extracting insights and building robust data solutions.
+          A modern toolkit for building AI applications, analytics experiences, and intelligent systems.
         </p>
       </div>
 
@@ -64,23 +42,14 @@ export function Skills() {
             <h3 className="text-xl font-semibold text-white mb-6 border-b border-white/10 pb-4">
               {category.category}
             </h3>
-            <div className="space-y-6">
+            <div className="flex flex-wrap gap-2">
               {category.skills.map((skill, sIdx) => (
-                <div key={sIdx}>
-                  <div className="flex justify-between items-center mb-2">
-                    <span className="text-sm font-medium text-gray-300">{skill.name}</span>
-                    <span className="text-xs text-gray-500">{skill.proficiency}%</span>
-                  </div>
-                  <div className="h-1.5 w-full bg-white/5 rounded-full overflow-hidden">
-                    <motion.div
-                      initial={{ width: 0 }}
-                      whileInView={{ width: `${skill.proficiency}%` }}
-                      viewport={{ once: true }}
-                      transition={{ duration: 1, delay: 0.2 }}
-                      className="h-full bg-gradient-to-r from-blue-500 to-purple-500 rounded-full"
-                    />
-                  </div>
-                </div>
+                <span
+                  key={sIdx}
+                  className="px-3 py-2 text-sm font-medium rounded-full border border-white/10 bg-white/5 text-gray-200"
+                >
+                  {skill}
+                </span>
               ))}
             </div>
           </Card>
